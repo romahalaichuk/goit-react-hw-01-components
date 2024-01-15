@@ -7,7 +7,7 @@ import data from './dt/data.json';
 import friends from './dt/friends.json';
 import transactions from './dt/transactions.json';
 
-const App = () => {
+export const App = () => {
   return (
     <>
       <User
