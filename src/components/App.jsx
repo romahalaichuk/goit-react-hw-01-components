@@ -1,4 +1,5 @@
-import User from './Profil/User';
+import React from 'react';
+import User from './Profil/Profil';
 import Statystics from './Statystics/Statysics';
 import Friends from './Friends/Friends';
 import Transaction from './Transaction/Transaction';
@@ -15,9 +16,7 @@ export const App = () => {
         username={user.username}
         tag={user.tag}
         location={user.location}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        stats={user.stats}
       />
       <Statystics title="Upload stats" stats={data} />
       <Friends friends={friends} />
@@ -25,4 +24,5 @@ export const App = () => {
     </>
   );
 };
+
 export default App;
